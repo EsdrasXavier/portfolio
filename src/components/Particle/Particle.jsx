@@ -24,7 +24,7 @@ const Particle = () => {
             opacity: 0.4
           },
           move: {
-            speed: .2
+            speed: 0.2
           },
           opacity: {
             anim: {

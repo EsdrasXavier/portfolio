@@ -1,14 +1,15 @@
 import { useState } from 'react';
 import { Parallax } from 'react-parallax';
-import Typing from 'react-typing-animation';
-import Particle from './Particle';
-import { CenterDiv, NameSpan, StyledHome } from './style';
 import { animated, useTransition } from 'react-spring';
+import Typing from 'react-typing-animation';
+import Particle from '../../components/Particle/Particle';
+import { CenterDiv, NameSpan, StyledHome } from './style';
+
 const Home: React.FC = () => {
   const [isTypingDone, setTypingDone] = useState<boolean>(false);
   const transitions = useTransition(isTypingDone, {
     from: { opacity: 0 },
-    enter: { opacity: .4 },
+    enter: { opacity: 0.4 },
     leave: { opacity: 0 },
     reverse: isTypingDone,
     delay: 100
