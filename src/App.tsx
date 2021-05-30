@@ -1,4 +1,3 @@
-import './App.css';
 import Header from './components/Header/Header';
 import ThemeContextProvider from './context/themeContext';
 import Router from './pages/Router';
