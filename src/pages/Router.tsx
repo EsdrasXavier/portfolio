@@ -1,5 +1,5 @@
 import { BrowserRouter, Route } from 'react-router-dom';
-import Home from './home/home';
+import Home from './home/Home';
 
 const Router: React.FC = () => {
   return (
