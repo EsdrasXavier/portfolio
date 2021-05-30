@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
 export const CenterDiv = styled.div`
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
-  position: relative;
+  height: 100px;
   text-align: center;
-  top: 50%;
   font-size: ${(props) => props.theme.fontSizes.extraLarge}};
 `;
 
