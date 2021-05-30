@@ -5,12 +5,12 @@ import { combineTheme, dark, light } from '../styles/themes';
 import { ThemeContextType } from './type';
 
 export const ThemeContext = React.createContext<ThemeContextType>({
-  theme: combineTheme(light),
+  theme: combineTheme(dark),
   toogleTheme: () => null
 });
 
 const ThemeContextProvider: React.FC = ({ children }) => {
-  const [theme, setTheme] = React.useState<DefaultTheme>(combineTheme(light));
+  const [theme, setTheme] = React.useState<DefaultTheme>(combineTheme(dark));
 
   const toogleTheme = () => {
     setTheme(

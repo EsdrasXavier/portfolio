@@ -1,10 +1,14 @@
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import Header from '../components/Header/Header';
+import About from './about/About';
 import Home from './home/Home';
 
 const Router: React.FC = () => {
   return (
     <BrowserRouter>
-      <Route exact path="/" component={Home} />
+      <Home />
+      <Header />
+      <About />
     </BrowserRouter>
   );
 };

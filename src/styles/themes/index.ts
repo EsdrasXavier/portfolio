@@ -6,7 +6,8 @@ const defaultTheme = {
   fontSizes: {
     small: '16px',
     medium: '18px',
-    large: '20px'
+    large: '20px',
+    extraLarge: '35px'
   }
 };
 

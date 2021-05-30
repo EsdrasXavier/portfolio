@@ -1,19 +1,21 @@
+import { Parallax } from 'react-parallax';
 import Typing from 'react-typing-animation';
+import { CenterDiv, NameSpan, StyledHome } from './style';
 
 const Home: React.FC = () => {
   return (
-    <div>
-      <Typing speed={20}>
-        <div>
-          Hi, welcome to my website! My name is Esdras Xavier and I'm a full
-          stack developer.
-        </div>
-        <div>
-          One of my 2021 goals is to become expert in Java with Spring Boot and
-          microservices.
-        </div>
-      </Typing>
-    </div>
+    <Parallax>
+      <StyledHome>
+        <CenterDiv>
+          <Typing speed={20}>
+            <div>
+              Hello! My name is <NameSpan>Esdras Xavier.</NameSpan>
+            </div>
+            <div>I'm a full-stack developer.</div>
+          </Typing>
+        </CenterDiv>
+      </StyledHome>
+    </Parallax>
   );
 };
 
