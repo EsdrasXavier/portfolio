@@ -43,7 +43,7 @@ const Particle = () => {
           move: {
             radius: 15
           },
-          url: '/assets/img/small-deer.svg',
+          url: './assets/img/small-deer.svg',
           inline: {
             arrangement: 'equidistant'
           },
