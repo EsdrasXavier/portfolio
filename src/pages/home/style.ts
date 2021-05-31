@@ -9,7 +9,12 @@ export const CenterDiv = styled.div`
   margin: auto;
   height: 100px;
   text-align: center;
+
   font-size: ${(props) => props.theme.fontSizes.extraLarge}};
+
+  @media(max-width: 800px) {
+    font-size: ${(props) => props.theme.fontSizes.large}};
+  }
 `;
 
 export const NameSpan = styled.span`
